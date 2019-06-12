@@ -1,0 +1,227 @@
+@import mixins
+@import media
+@import sprites
+@import normalize
+
+$font-family: Montserrat
+
+
+.header
+	height: 685px
+	&-background
+		position: relative
+		height: 685px
+		z-index: -2
+	&-row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 960px
+		padding-top: 35px
+		margin: 0 auto
+		margin-bottom: -237px
+		z-index: 2
+	&-logo
+		display: flex
+		align-items: center
+		&__title
+			font-size: 30px
+			font-weight: 700
+			text-transform: uppercase
+			margin-left: 10px
+	&-menu
+		display: flex
+		justify-content: space-between
+		width: 750px
+		list-style: none
+		&__link
+			padding: 5px 0
+			&:hover
+				padding: 5px 0
+				border-bottom: 1px solid #000
+
+.offer
+	padding-top: 390px
+	margin-left: 90px 
+	margin-bottom: -432px
+	&-title
+		font-size: 41px
+		font-weight: 700
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+		text-transform: uppercase
+	&-item
+		width: 390px
+		font-size: 24px
+		font-weight: 400
+		margin: 20px 0 70px
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+	&-button
+		width: 246px
+		color: #fff
+		height: 54px
+		background-color: #42a83a
+		border-radius: 10px
+		padding: 15px 30px
+		&:hover
+			background: #59bdcb
+
+.background
+	&-laer
+		&__one
+			width: 100%
+			position: absolute
+			top: 0
+			right: 0
+			z-index: -1
+		&__two
+			width: 25%
+			height: 15%
+			position: absolute
+			top: 0
+			right: 0
+			z-index: -1
+		&__three
+			width: 25%
+			position: absolute
+			bottom: 0
+			left: 0
+			z-index: -1
+		&__img
+			position: absolute
+			bottom: 60px
+			right: 9%
+			z-index: -1
+
+.tab
+	&-row
+		display: flex
+		justify-content: space-between
+		padding: 0 25px
+		&:first-child
+			padding-top: 25px
+	&-ticket
+		width: 300px
+		height: 470px
+		margin-bottom: 25px
+		background-color: #f9f9f9
+		border-radius: 20px
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.14)
+		position: relative
+		&__top
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 150px
+			background: #fff
+			border-radius: 20px 20px 0 0
+			margin-bottom: 20px
+		&__item
+			display: flex
+			align-items: center
+			height: 50px
+			margin-left: 20px
+			&--img
+				padding: 5px
+			&--proposition
+				color: #000
+				font-size: 24px
+				font-weight: 500
+				margin-left: 20px
+		&__button
+			width: 230px	
+			color: #fff
+			text-align: center
+			background-color: #42a83a
+			border-radius: 10px
+			padding: 15px 30px
+			position: absolute
+			bottom: 90px
+			right: 40px
+			&:hover
+				background: #59bdcb
+		&__motivation
+			width: 250px
+			line-height: 18px
+			font-weight: 500
+			text-align: center
+			position: absolute
+			bottom: 20px
+			right: 25px
+
+.green
+	text-align: center
+	color: #42a83a
+	font-weight: 700
+.circle
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 45px
+	height: 45px
+	border-radius: 50%
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2)
+
+
+
+.conditions
+	height: 630px
+	position: relative
+	&-background
+		position: absolute
+		right: 15%
+		bottom: 117px
+		z-index: -1
+	&-text
+		width: 400px
+		margin-left: 117px
+		padding-top: 30px
+	&-list
+		margin-top: 30px
+		&__item
+			list-style-image: url(../img/Прямоугольник,-скругл.png)
+			line-height: 17px
+			margin-left: 12px
+			margin-top: 10px
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+	&-title
+		padding-top: 110px
+		color: #000
+		font-size: 24px
+		font-weight: 700
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+		
+.footer
+	height: 184px
+	background-color: #d0d0d0
+	&-background
+		position: relative
+		height: 685px
+		z-index: -2
+	&-row
+		display: flex
+		align-items: center
+		width: 1050px
+		padding-top: 35px
+		margin: 0 auto
+		margin-bottom: -237px
+		z-index: 2
+	&-logo
+		display: flex
+		align-items: center
+		&__title
+			font-size: 30px
+			font-weight: 700
+			text-transform: uppercase
+			margin-left: 10px
+	&-menu
+		display: flex
+		width: 750px
+		margin-left: 80px
+		list-style: none
+		&__link
+			font-size: 12px
+			padding: 5px 0
+			margin-left: 35px
+			&:hover
+				padding: 5px 0
+				border-bottom: 1px solid #000
