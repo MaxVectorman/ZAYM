@@ -260,3 +260,12 @@ $units: 1px !default;
     @content;
   }
 }
+
+@mixin desktop-full-hd
+{
+  @media screen and (min-device-width: 1080px) and (max-device-width: 1900px)
+  and (-webkit-device-pixel-ratio: 2) and (orientation:landscape)
+  {
+    @content;
+  }
+}
