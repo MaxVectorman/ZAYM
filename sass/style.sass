@@ -16,8 +16,7 @@ $font-family: Montserrat
 		display: flex
 		align-items: center
 		justify-content: space-between
-		width: 960px
-		padding-top: 35px
+		padding-top: 25px
 		margin: 0 auto
 		margin-bottom: -237px
 		z-index: 2
@@ -32,25 +31,32 @@ $font-family: Montserrat
 	&-menu
 		display: flex
 		justify-content: space-between
-		width: 750px
+		width: 530px
+		margin-right: 180px
 		list-style: none
 		&__link
+			font-size: 18px
+			color: #000
 			padding: 5px 0
 			&:hover
 				padding: 5px 0
 				border-bottom: 1px solid #000
+	&-simple
+		height: 100px
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.14)
 
 .offer
-	padding-top: 390px
-	margin-left: 90px 
+	padding-top: 350px 
 	margin-bottom: -432px
 	&-title
+		width: 475px
+		line-height: 50px
 		font-size: 41px
 		font-weight: 700
 		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
 		text-transform: uppercase
 	&-item
-		width: 390px
+		width: 430px
 		font-size: 24px
 		font-weight: 400
 		margin: 20px 0 70px
@@ -91,6 +97,10 @@ $font-family: Montserrat
 			bottom: 60px
 			right: 9%
 			z-index: -1
+
+.page
+	width: 1300px
+	margin: 0 auto
 
 .tab
 	&-row
@@ -164,35 +174,51 @@ $font-family: Montserrat
 
 
 .conditions
-	height: 630px
+	height: 730px
 	position: relative
 	&-background
 		position: absolute
 		right: 15%
-		bottom: 117px
+		bottom: 100px
 		z-index: -1
 	&-text
-		width: 400px
-		margin-left: 117px
+		width: 710px
 		padding-top: 30px
 	&-list
+		width: 465px
 		margin-top: 30px
 		&__item
 			list-style-image: url(../img/Прямоугольник,-скругл.png)
-			line-height: 17px
-			margin-left: 12px
+			line-height: 20px
+			padding-bottom: 10px
+			margin-left: 15px
 			margin-top: 10px
 			text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
 	&-title
-		padding-top: 110px
+		padding-top: 30px
 		color: #000
-		font-size: 24px
+		font-size: 20px
 		font-weight: 700
 		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+		&__big
+			width: 930px
+			font-size: 24px
+			font-weight: 700
+			padding-top: 30px
+			padding-bottom: 15px
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+	&-paragraph
+		width: 925px
+		line-height: 20px
+		padding: 10px 0
+	&-definition
+		width: 465px
+		line-height: 20px
+		padding: 25px 0
 		
 .footer
-	height: 184px
-	background-color: #d0d0d0
+	height: 260px
+	background-color: #3e384a
 	&-background
 		position: relative
 		height: 685px
@@ -200,13 +226,12 @@ $font-family: Montserrat
 	&-row
 		display: flex
 		align-items: center
-		
 		width: 1050px
 		padding-top: 35px
 		margin: 0 auto
-		margin-bottom: -237px
 		z-index: 2
 	&-logo
+		color: #fff
 		display: flex
 		align-items: center
 		&__title
@@ -220,12 +245,197 @@ $font-family: Montserrat
 		margin-left: 80px
 		list-style: none
 		&__link
+			color: #fff
 			font-size: 12px
 			padding: 5px 0
 			margin-left: 35px
 			&:hover
 				padding: 5px 0
-				border-bottom: 1px solid #000
+				border-bottom: 1px solid #fff
+	&-def
+		color: #fff
+		line-height: 16px
+		padding-top: 45px
+
+.breadcrumbs
+	color: #777
+	text-align: center
+	width: 650px
+	margin: 0 auto
+	padding: 30px 0
+
+
+.information
+	&-title
+		width: 650px
+		margin: 0 auto
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		padding-bottom: 30px
+
+
+.info
+	display: flex
+	justify-content: space-between
+	&-articuls
+		height: 780px
+		width: 890px
+		&__row
+			display: flex
+	&-articul
+		height: 360px
+		width: 413px
+		margin-right: 30px
+		margin-bottom: 30px
+		border-radius: 20px
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.14)
+		&__img
+			max-width: 100%
+			overflow: hidden
+			-webkit-border-radius: 20px 20px 0 0
+			border-radius: 20px 20px 0 0
+		&__item
+			width: 280px
+			height: 80px
+			font-size: 18px
+			text-align: center
+			line-height: 20px
+			margin: 0 auto
+			padding-top: 20px
+		&__link
+			display: block
+			color: #42a83a
+			font-size: 20px
+			text-align: center
+			text-transform: uppercase
+			text-decoration: underline
+			margin: 0 auto
+	&-sidebar
+		background-color: #e4e1eb
+		height: 750px
+		width: 410px
+		border-radius: 10px
+		padding: 55px
+		padding-bottom: 0
+		margin-bottom: 30px
+
+
+.ticket
+	width: 301px
+	height: 185px
+	margin-bottom: 30px
+	background-color: #f9f9f9
+	border-radius: 20px
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.14)
+	position: relative
+	&-b
+		width: 301px
+		height: 185px
+		margin-bottom: 20px
+		background-color: #f9f9f9
+		border-radius: 20px
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.14)
+		position: relative
+	&__top
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 301px
+		height: 98px
+		background: #fff
+		border-radius: 20px 20px 0 0
+		margin-bottom: 20px
+	&__item
+		display: flex
+		align-items: center
+		height: 50px
+		margin-left: 20px
+		&--img
+			padding: 5px
+		&--proposition
+			color: #000
+			font-size: 24px
+			font-weight: 500
+			margin-left: 20px
+	&__button
+		width: 230px	
+		color: #fff
+		text-align: center
+		background-color: #42a83a
+		border-radius: 10px
+		padding: 15px 30px
+		position: absolute
+		bottom: 25px
+		right: 40px
+		&:hover
+			background: #59bdcb
+	
+
+.img
+	display: flex
+	justify-content: center
+	padding: 30px 0
+
+.articul
+	&-text
+		width: 650px
+		margin: 0 auto
+		padding-bottom: 50px
+	&-list
+		margin-top: 30px
+		&__item
+			width: 560px
+			list-style-image: url(../img/Прямоугольник,-скругл__green.png)
+			line-height: 20px
+			padding-bottom: 10px
+			margin-left: 15px
+			margin-top: 10px
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+	&-title
+		padding-top: 30px
+		color: #000
+		font-size: 20px
+		font-weight: 700
+		line-height: 30px
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+		&__big
+			font-size: 24px
+			font-weight: 700
+			margin-left: 30px
+			padding-top: 30px
+			padding-bottom: 15px
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.9)
+	&-paragraph
+		line-height: 20px
+		padding: 10px 0
+
+.popular
+	background-color: #e5e2ec
+	&-title
+		width: 600px
+		margin: 0 auto
+		text-align: center
+		color: #3e384a
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 30px
+		padding-top: 30px
+	&-choice
+		display: block
+		width: 300px
+		margin: 0 auto
+		text-align: center
+		color: #3e384a
+		font-size: 24px
+		font-weight: 700
+		text-decoration: underline
+		text-transform: uppercase
+		line-height: 30px
+		padding-bottom: 50px
+
+
 
 @media screen and (min-width: 360px)
 
